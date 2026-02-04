@@ -1,6 +1,5 @@
 # Binaries
 bin/
-goclaw
 *.exe
 *.dll
 *.so
