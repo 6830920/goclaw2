@@ -1,0 +1,37 @@
+# GoClaw2 Configuration Example
+# Copy this file to ~/.goclaw.yaml and customize
+
+zhipu:
+  # Your Zhipu AI API Key (required)
+  # Get it from: https://open.bigmodel.cn/
+  api_key: "your-api-key-here"
+
+  # API base URL (usually don't need to change)
+  base_url: "https://open.bigmodel.cn/api/paas/v4"
+
+  # Model to use
+  # Options: glm-4-flash, glm-4, glm-4-plus, etc.
+  model: "glm-4-flash"
+
+  # Temperature (0.0 - 2.0, higher = more creative)
+  temperature: 0.7
+
+  # Maximum tokens in response
+  max_tokens: 4096
+
+agent:
+  # Maximum number of messages to keep in history
+  max_history: 50
+
+memory:
+  # Storage type (only "sqlite" supported for now)
+  type: "sqlite"
+
+  # Path to the SQLite database file
+  file_path: "./goclaw.db"
+
+gateway:
+  # WebSocket gateway (not implemented yet)
+  enabled: false
+  port: 8080
+  host: "localhost"

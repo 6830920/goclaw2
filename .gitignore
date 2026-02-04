@@ -1,0 +1,35 @@
+# Binaries
+bin/
+goclaw
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Config
+.goclaw.yaml
+
+# Go
+*.test
+*.out
+go.work
+vendor/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
